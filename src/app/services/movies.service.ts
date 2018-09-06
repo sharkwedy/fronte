@@ -9,7 +9,7 @@ export class MovieService {
 
   selectedMovie: Movie;
   movies: Movie[];
-  readonly URL_API = 'http://localhost:3000/api/movies';
+  readonly URL_API = 'https://sfddemais.herokuapp.com/api/movies';
   constructor(private http: HttpClient) {
     this.selectedMovie = new Movie();
   }
