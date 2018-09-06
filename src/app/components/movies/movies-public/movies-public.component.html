@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+      <div class="col s7">
+        <table class="striped">
+          <thead>
+            <th>Nome</th>
+            <th>Ano de Produção</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let movie of movieService.movies">
+              <td>{{movie.name}}</td>
+              <td>{{movie.year}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
